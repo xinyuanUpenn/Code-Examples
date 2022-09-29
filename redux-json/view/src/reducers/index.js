@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 
+// state is a list of student
 export const students = (state = [], action) => {
   switch (action.type) { 
     case 'ADD_STUDENT':
@@ -18,6 +19,7 @@ export const students = (state = [], action) => {
   }
 };
 
+// state is name of the major
 export const majorFilter = (state = 'SHOW_ALL', action) => {
   switch (action.type) {
     case 'SET_MAJOR_FILTER':
